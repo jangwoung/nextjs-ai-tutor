@@ -1,0 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ハンズオン開始時点では、まだモデルは定義しません。
+// Phase 2（Database & Prisma）の演習で User / Account / Session / Post を受講者に定義してもらいます。
